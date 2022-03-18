@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "allowUnreachableCode": true,
+    "importHelpers": true,
+    "jsx": "react",
+    "noImplicitAny": false,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "baseUrl": "./",
+    "moduleResolution": "Node",
+    "strict": true,
+    "typeRoots": ["node_modules/@types"],
+    "paths": {
+      "@/*": ["src/*"],
+      "*": ["types/*"]
+    },
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "allowJs": true
+  },
+  "include": ["src/**/*", "typings.d.ts", "test/**/*"],
+  "exclude": [
+    "**css.d.ts",
+    "**.html",
+    "webpack.config.js",
+    "config/**/*",
+    "bin/**/*"
+  ]
+}
